@@ -1,0 +1,505 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+body {
+  background: linear-gradient(
+    190deg,
+    #e8bcb9,
+    #f39f5a,
+    #ae445a,
+    #662549,
+    #451952,
+    #1d1a39
+  );
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 22px 15%;
+  border-bottom: 1px solid transparent;
+  transition: all 0.45s ease;
+}
+.logo {
+  color: red;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.logo img {
+  width: 150px;
+}
+span i {
+  color: red;
+}
+.col {
+  color: orangered;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #afa7bb;
+  font-weight: bold;
+}
+.navlist {
+  display: flex;
+}
+.navlist a {
+  color: violet;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 25px;
+  transition: all 0.45s ease;
+}
+.navlist a:hover {
+  color: black;
+}
+.navlist a.active {
+  color: lightsalmon;
+}
+#menu-icon {
+  font-size: 35px;
+  color: black;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
+}
+
+section {
+  padding: 160px 15% 120px;
+}
+
+/* this style is for home */
+.home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide {
+  margin-bottom: 20px;
+}
+.one {
+  display: inline-block;
+  margin-right: 15px;
+  height: 32px;
+  padding: 0 15px;
+  line-height: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 18px;
+  background: var(--main-color);
+  color: var(--text-color);
+}
+.home-text h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  line-height: 1.1;
+  margin: 0 0 8px;
+}
+.home-text h3 {
+  color: palevioletred;
+  margin: 0 0 35px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.home-text p {
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: pink;
+  border-radius: 50px;
+  color: black;
+  font-size: 1rem;
+  margin: 15px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.45s ease;
+}
+.btn:hover {
+  transform: scale(0.9);
+}
+
+header.sticky {
+  background: transparent;
+  border-bottom: 1px solid #ffffff1a;
+  padding: 12px 15%;
+  height: 100px;
+}
+
+/* styles for about section */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+}
+.about-img img {
+  max-width: 400px;
+  height: 80vh;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+.about-text h2 {
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+.about-text h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin: 15px 0 30px;
+}
+.about-text p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 4rem;
+}
+
+.container {
+  width: 800px;
+  margin: 50px auto 0;
+  display: table;
+  box-sizing: border-box;
+}
+.column {
+  display: table-cell;
+  padding: 10px;
+  width: 33.3333%;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 10px solid rgb(19, 18, 18);
+  border-left: 10px solid rgb(17, 16, 16);
+}
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pic_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 40rem;
+  margin-left: 500px;
+}
+.top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.top hr {
+  position: relative;
+  width: 70px;
+  height: 4px;
+  border: none;
+  background: #298ec7;
+}
+.content {
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+.content img {
+  position: relative;
+  width: 100px;
+  height: 80px;
+  padding: 10px;
+  background: var(--text-color);
+  border-radius: 50%;
+}
+.content p {
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.main-text {
+  text-align: center;
+}
+.main-text p {
+  color: black;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.main-text h2 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.box p {
+  color: red;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.read {
+  display: inline-block;
+  padding: 8px 18px;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.45s ease;
+}
+.read:hover {
+  letter-spacing: 1px;
+  color: black;
+}
+.box:hover {
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.row img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #2e5fc8);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+.layer h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.layer p {
+  color: var(--second-color);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.layer i {
+  color: var(--main-color);
+  margin-top: 20px;
+  font-size: 20px;
+  background: var(--text-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.row:hover img {
+  transform: scale(1.1);
+}
+
+.row:hover .layer {
+  height: 100%;
+}
+
+/* styles for contact section */
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+.contact-text h4 {
+  color: black;
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-text h2 {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.contact-form form {
+  position: relative;
+}
+.contact-form form input,
+form textarea {
+  width: 100%;
+  padding: 14px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.contact-form textarea {
+  resize: none;
+  height: 240px;
+}
+.contact-form .submit {
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+  width: 160px;
+  transition: all 0.45s ease;
+}
+.contact-form .submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #ae445a;
+}
+.last-text p {
+  color: black;
+  font-size: 14px;
+}
+.top i {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: black;
+}
+
+/* for responsiveness of the design */
+@media (max-width: 1480px) {
+  header {
+    padding: 12px 2.5%;
+    transition: 0.1s;
+  }
+  header.sticky {
+    padding: 10px 2.5%;
+    transition: 0.1s;
+  }
+  section {
+    padding: 110px 3% 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --big-font: 4rem;
+    --h2-font: 2.5rem;
+    --p-font: 1rem;
+    transition: 0.1s;
+  }
+  .home-text h3 {
+    font-size: 2.5rem;
+  }
+  .home {
+    height: 87vh;
+  }
+}
+
+@media (max-width: 920px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    text-align: center;
+    order: 2;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 840px) {
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+  .navlist a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: black;
+  }
+  .navlist a:hover {
+    color: black;
+  }
+  .navlist a.active {
+    color: black;
+  }
+  .navlist.open {
+    top: 100%;
+  }
+}
+@media (max-width: 786px) {
+  .skill {
+    height: auto;
+  }
+}
